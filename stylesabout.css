@@ -1,0 +1,58 @@
+/* ================= THEME VARIABLES ================= */
+
+:root {
+  --bg-color: #ffffff;
+  --section-bg: #ffffff;
+  --text-color: #111827;
+  --subtext-color: #374151;
+  --primary-color: #ff5f11;
+}
+
+/* Dark Mode */
+body.dark-theme {
+  --bg-color: #0b0b0b;
+  --section-bg: #111111;
+  --text-color: #e5e7eb;
+  --subtext-color: #9ca3af;
+  --primary-color: #f4b804;
+}
+
+/* ================= GLOBAL ================= */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================= ABOUT SECTION ================= */
+
+
+.header {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("assets/home 4.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about__section {
+  background-color: var(--section-bg);
+ 
+}
+
+.about__section .section__header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.about__text {
+  max-width: 900px;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1rem;
+  line-height: 1.9rem;
+  color: var(--subtext-color);
+  text-align: center;
+}
+
