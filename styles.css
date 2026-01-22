@@ -569,6 +569,7 @@ nav {
 .faq__image img {
   max-width: 450px;
   margin-inline: auto;
+  padding: 10px;
 }
 
 .faq__content .section__header {
