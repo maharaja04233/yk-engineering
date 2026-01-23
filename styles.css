@@ -442,7 +442,7 @@ nav {
   z-index: -1;
   transform: translateY(-100%);
 }
-.nav-links {
+.nav__links {
   margin-top: 90px;
 }
 
@@ -5520,5 +5520,6 @@ border: solid  5px   #FCC236;
     float: right;
   }
 }
+
 
 
