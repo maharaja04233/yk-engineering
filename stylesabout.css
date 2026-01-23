@@ -7,6 +7,38 @@
   --subtext-color: #374151;
   --primary-color: #ff5f11;
 }
+.contact__section {
+  padding-top: 140px;
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact__form button {
+  background: #ff5f11;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* Dark Mode */
 body.dark-theme {
@@ -16,6 +48,7 @@ body.dark-theme {
   --subtext-color: #9ca3af;
   --primary-color: #f4b804;
 }
+
 
 /* ================= GLOBAL ================= */
 
@@ -55,4 +88,5 @@ body {
   color: var(--subtext-color);
   text-align: center;
 }
+
 
