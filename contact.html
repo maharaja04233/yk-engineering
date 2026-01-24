@@ -238,7 +238,27 @@ body {
   height: 350px;
   border: 0;
 }
+.contact-wrapper {
+  display: flex;
+  gap: 30px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
 
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+}
 /* ================= NAV DROPDOWN ================= */
 .dropdown {
   position: relative;
