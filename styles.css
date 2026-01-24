@@ -384,7 +384,7 @@ nav {
   isolation: isolate;
   width: 100%;
   z-index: 9;
- top: 40px;
+
 }
 
 
@@ -396,7 +396,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   background-color: var(--primary-color);
-  
+   top: 40px;
   
 }
 #f{
@@ -5532,6 +5532,7 @@ border: solid  5px   #FCC236;
     float: right;
   }
 }
+
 
 
 
