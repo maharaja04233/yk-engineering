@@ -81,9 +81,7 @@ body.dark-theme .about__text {
 }
 #ba{
   background-image: url("assets/slide-4.jpeg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+ 
 }
 
 /* ==================== Skills section css code ============================ */
@@ -5537,6 +5535,7 @@ border: solid  5px   #FCC236;
     float: right;
   }
 }
+
 
 
 
