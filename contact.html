@@ -106,63 +106,84 @@
 </script>
  
 <style>
-*{
-@media(max-width:992px){
-.contact-wrapper{
-grid-template-columns:1fr 1fr;
+/* ===== CONTACT TITLE WITH BACKGROUND IMAGE ===== */
+.contact-title {
+background: url("YOUR-BANNER-IMAGE.jpg") center center / cover no-repeat;
+padding: 90px 20px;
+text-align: center;
+color: #fff;
+position: relative;
 }
 
 
-.contact-image{
-grid-column:1 / -1;
+.contact-title::after {
+content: "";
+position: absolute;
+inset: 0;
+background: rgba(0,0,0,0.6);
 }
 
 
-.page-title h1{
-font-size:38px;
-}
-}
-
-
-/* MOBILE */
-@media(max-width:600px){
-nav{
-flex-direction:column;
-gap:10px;
+.contact-title h2,
+.contact-title p {
+position: relative;
+z-index: 1;
 }
 
 
-.nav__links{
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
+.contact-title h2 {
+font-size: 42px;
+margin-bottom: 10px;
 }
 
 
-.page-title{
-padding:60px 15px;
+.contact-title p {
+font-size: 18px;
 }
 
 
-.page-title h1{
-font-size:28px;
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+padding: 60px 20px;
+background: #fff;
 }
 
 
-.page-title p{
-font-size:16px;
+.container {
+max-width: 1200px;
+margin: auto;
 }
 
 
-.contact-wrapper{
-grid-template-columns:1fr;
-padding:20px;
+.contact-wrapper {
+display: flex;
+gap: 30px;
+flex-wrap: wrap;
+align-items: center;
 }
 
 
-.map iframe{
-height:260px;
+/* ===== GIRL IMAGE ===== */
+.contact-image {
+flex: 1;
 }
+
+
+.contact-image img {
+width: 100%;
+max-width: 450px;
+border-radius: 10px;
+display: block;
+margin: auto;
+}
+
+
+/* ===== CONTACT INFO ===== */
+.contact-info {
+flex: 1;
+background: #0b2c4d;
+color: #fff;
+padding: 30px;
 }
 </style>
   </head>
