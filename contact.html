@@ -14,148 +14,181 @@
     />
 <style>
 body {
-  font-family: Roboto, Arial, sans-serif;
-  margin: 0;
-  background: #f7f7f7;
-}
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+    color: #333;
+  }
 
-/* ===== CONTACT TITLE WITH BACKGROUND IMAGE ===== */
-.contact-title {
- 
-  
-  text-align: center;
-  
-  position: relative;
-}
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-.contact-title::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  
-}
+  a:hover,
+  a:focus {
+    color: #124d82;
+  }
 
-.contact-title h2,
-.contact-title p {
-  position: relative;
-  z-index: 1;
-}
+  /* Contact title */
+  .contact-title {
+    text-align: center;
+    padding: 1rem 0 2rem;
+    
+  }
+  .contact-title h2 {
+    font-size: 2.6rem;
+    margin: bottom 0.5rem;
+    color: orange;
+  }
+  .contact-title p {
+    font-size: 1.1rem;
+    color: white;
+  }
 
-.contact-title h2 {
-  font-size: 42px;
-  margin-bottom: 10px;
-      color:orange;
-}
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
 
-.contact-title p {
-  font-size: 18px;
-      color: white;
-}
+  /* Contact Section */
+  .contact-section {
+    background: #fff;
+    padding: 3rem 1rem 4rem;
+  }
 
-/* ===== CONTACT SECTION ===== */
-.contact-section {
-  padding: 60px 20px;
-  background: #fff;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.contact-wrapper {
+ .contact-wrapper {
   display: flex;
-  gap: 30px;
+  gap: 2rem;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
+  align-items: stretch; /* makes all items equal height */
 }
 
-/* ===== GIRL IMAGE ===== */
-.contact-image {
-  flex: 1;
-}
 
-.contact-image img {
+  /* Contact Image */
+  .contact-image {
+    flex: 1 1 300px;
+    max-width: 450px;
+  }
+  .contact-image img {
   width: 100%;
-  max-width: 450px;
+  height: 100%;   /* new */
+  object-fit: cover; /* maintain aspect ratio */
   border-radius: 10px;
   display: block;
-  margin: auto;
 }
 
-/* ===== CONTACT INFO ===== */
-.contact-info {
-  flex: 1;
-  background: #0b2c4d;
-  color: #fff;
-  padding: 30px;
-  border-radius: 6px;
-}
-
-.contact-info h3 {
-  margin-bottom: 20px;
-}
-
-.info-box {
-  margin-bottom: 20px;
-}
-
-.info-box strong {
-  display: block;
-  margin-bottom: 5px;
-}
-
-/* ===== CONTACT FORM ===== */
+.contact-info,
 .contact-form {
-  flex: 1;
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 6px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* aligns content nicely */
 }
 
-.contact-form h3 {
-  margin-bottom: 20px;
+
+  /* Contact Info */
+  .contact-info {
+    flex: 1 1 300px;
+    background: #0b2c4d;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 6px;
+    box-sizing: border-box;
+    min-width: 280px;
+  }
+  .contact-info h3 {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    font-size: 1.6rem;
+  }
+  .info-box {
+    margin-bottom: 1.25rem;
+  }
+  .info-box strong {
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+  .contact-info a {
+    color: #ffcc66;
+    word-break: break-word;
+  }
+  .contact-info a:hover {
+    color: #fff;
+  }
+
+  /* Contact Form */
+  .contact-form {
+    flex: 1 1 300px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    min-width: 280px;
+  }
+  .contact-form h3 {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    font-size: 1.6rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: vertical;
+    box-sizing: border-box;
+    font-family: inherit;
+  }
+  .contact-form button {
+    background: #0b2c4d;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  .contact-form button:hover,
+  .contact-form button:focus {
+    background: #124d82;
+  }
+
+  /* Map */
+  .map {
+    margin-top: 3rem;
+    border-radius: 6px;
+    overflow: hidden;
+    
+  }
+  iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+  }
+
+  /* Header styles */
+  @media(max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-image,
+  .contact-info,
+  .contact-form {
+    min-width: 100%;
+  }
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
 
-.contact-form textarea {
-  height: 120px;
-}
-
-.contact-form button {
-  background: #0b2c4d;
-  color: #fff;
-  padding: 12px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.contact-form button:hover {
-  background: #124d82;
-}
-
-/* ===== MAP ===== */
-.map {
-  margin-top: 50px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-iframe {
-  width: 100%;
-  height: 350px;
-  border: 0;
-}
 
 /* ===== RESPONSIVE ===== */
 @media(max-width: 768px) {
@@ -163,6 +196,13 @@ iframe {
     flex-direction: column;
   }
 }
+@media (max-width: 768px) {
+  .section__container {
+    padding-top: 140px; /* pushes h2 below navbar */
+  }
+}
+
+
 </style>
    <link rel="stylesheet" href="styles.css" />
      <link class="lg" rel="icon" href="assets/l.jpg" type="assets/logo" style="border-radius: 10cap;">
@@ -210,8 +250,8 @@ iframe {
           <button class="btn"><a  href="mailto:ykfabricationworks@gmail.com">Let's Chat</a> </button>
         </div>
       </nav>
-      <section class="section__container about__section" >
-      <div class="contact-title">
+      <section class="section__container "  id="pad">
+      <div class="contact-title" style="padding-bottom: 20px;">
   <h2>Contact Us</h2>
   <p>We are ready to help your business grow</p>
 </div>
@@ -226,7 +266,7 @@ iframe {
 
       <!-- GIRL IMAGE -->
       <div class="contact-image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgZ0G_Rtvr0hz4wmk6QOF8_yDFUzXa5vGnOw&s" alt="Customer Support">
+        <img src="data:image/jpeg;base64,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">
       </div>
 
       <!-- CONTACT INFO -->
@@ -329,5 +369,7 @@ iframe {
   <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+   
+   
 </body>
 </html>
