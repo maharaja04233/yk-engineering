@@ -74,16 +74,26 @@ body.dark-theme .about__text {
 }
 
 #ab{
-  background-image: url("assets/home 4.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url("assets/home 4.jpeg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 360px;
 }
 #ba{
-  background-image: url("assets/slide-4.jpeg");
- 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url("assets/slide-4.jpeg");
+   background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 360px;
 }
-
+#ac{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url("assets/fac1.jpeg");
+   background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 360px;
+}
 /* ==================== Skills section css code ============================ */
 
 .skillBox{
@@ -380,6 +390,16 @@ body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  
+
+
+}
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("assets/header.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 nav {
@@ -389,6 +409,18 @@ nav {
   z-index: 9;
 
 }
+
+
+  
+
+
+
+  
+  
+
+
+
+
 
 
 
