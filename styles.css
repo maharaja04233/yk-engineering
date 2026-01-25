@@ -94,6 +94,27 @@ body.dark-theme .about__text {
   background-repeat: no-repeat;
   height: 360px;
 }
+#ca{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url("assets/const1.jpeg");
+   background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 360px;
+}
+#ad{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url("assets/fitting.jpeg");
+   background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 370px;
+}
+#da{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url("assets/roofing.jpeg");
+   background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 360px;
+}
 /* ==================== Skills section css code ============================ */
 
 .skillBox{
@@ -5567,7 +5588,6 @@ border: solid  5px   #FCC236;
     float: right;
   }
 }
-
 
 
 

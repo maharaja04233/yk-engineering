@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parking Shed</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#f6f7f8;
+
+}
+
+/* PRODUCT SECTION */
+.product {
+  max-width:1100px;
+  margin:auto;
+  background:#fff;
+  display:flex;
+  gap:40px;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.1);
+  animation: fadeUp 1s ease;
+}
+
+/* IMAGE */
+.product-img {
+  flex:1;
+}
+
+.product-img img {
+  width:100%;
+  border-radius:10px;
+}
+
+/* CONTENT */
+.product-content {
+  flex:1;
+}
+
+.product-content h1 {
+  font-size:30px;
+  margin-bottom:15px;
+}
+
+.product-content p {
+  color:#555;
+  line-height:1.7;
+  margin-bottom:15px;
+}
+
+/* FEATURES */
+.features li {
+  margin-bottom:8px;
+}
+
+/* BUTTON */
+.btn {
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 30px;
+  background:#000;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover {
+  background:#27ae60;
+}
+.contact-title {
+    text-align: center;
+    padding: 1rem 0 2rem;
+    
+  }
+  .contact-title h2 {
+    font-size: 2.6rem;
+    margin: bottom 0.5rem;
+    color: orange;
+  }
+  .contact-title p {
+    font-size: 1.1rem;
+    color: white;
+  }
+  @media (max-width: 768px) {
+  .contact-title {
+    padding-top: 140px; /* pushes h2 below navbar */
+  }
+}
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to {
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .product{
+    flex-direction:column;
+  }
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+  background:#ffffff;
+}
+
+/* MAIN CONTAINER */
+.industry-section{
+  max-width:1200px;
+  margin:80px auto;
+  display:flex;
+  align-items:center;
+  gap:60px;
+  padding:0 20px;
+}
+
+/* LEFT IMAGE */
+.industry-image{
+  flex:1;
+}
+
+.industry-image img{
+  width:100%;
+  border-radius:6px;
+}
+
+/* RIGHT CONTENT */
+.industry-content{
+  flex:1;
+}
+
+.industry-content h2{
+  font-size:34px;
+  color:orangered; /* green like screenshot */
+  margin-bottom:15px;
+}
+
+.industry-content h3{
+  font-size:24px;
+  color:orangered;
+  margin:25px 0 10px;
+}
+
+.industry-content p{
+  font-size:16px;
+  line-height:1.8;
+  color:#444;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .industry-section{
+    flex-direction:column;
+  }
+}
+.product {
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  gap:40px;
+  background:#d8d8d8;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.product-img {
+  flex:1;
+}
+.product-img img {
+  width:100%;
+  border-radius:10px;
+}
+
+/* CONTENT */
+.product-content {
+  flex:1;
+}
+.product-content h1 {
+  font-size:30px;
+  margin-bottom:15px;
+}
+.product-content p {
+  color:#555;
+  line-height:1.7;
+}
+.features li {
+  margin:8px 0;
+  list-style:none;
+}
+
+/* BUTTON */
+.btn {
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 30px;
+  background:#000;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+}
+
+/* SWIPER FIX */
+.productSwiper {
+  padding:40px 0;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .product {
+    flex-direction:column;
+  }
+}
+/* Services section */
+#services {
+  padding: 40px 0;
+}
+
+/* Slider wrapper */
+#slideImg {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Sliding container */
+.slideMain {
+  display: flex;
+  width: 200%;
+}
+
+/* Slide list */
+.slide1 {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+  animation: slideHorizontal 20s linear infinite;
+}
+
+/* Slide item */
+.slide1 li {
+  flex: 0 0 auto;
+}
+
+/* Image styling */
+.slide1 img {
+  width: 210px;
+  height: 154px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation keyframes */
+@keyframes slideHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause animation on hover (optional) */
+.slide1:hover {
+  animation-play-state: paused;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .slide1 img {
+    width: 160px;
+    height: 120px;
+  }
+}
+.slide1:hover {
+  animation-play-state: paused;
+}
+
+
+</style>
+  <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"   
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+    
+  <link rel="stylesheet" href="styles.css" />
+   
+    
+    <link class="lg" rel="icon" href="assets/l.jpg" type="assets/logo" style="border-radius: 10cap;">
+</head>
+
+<body>
+    <a href="https://wa.me/919080350798" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+   <i class="ri-whatsapp-line"></i>
+</a>
+    <header class="header" id="ad">
+      <nav>
+        <div class="nav__header" >
+         <div class="nav__logo" id="f">
+          <a href="https://yk-engineering.vercel.app/"> <h1 class="txt"><img src="assets/img.png" alt="fabrication work in chennai" title="fabrication work in chennai"></h1><p class="fot">ENGINEERING WORKS</p> </a>
+             
+          </div>
+          
+           
+          <div class="nav__menu__btn" id="menu-btn">
+            <span><i class="ri-menu-line"></i></span>
+          </div>
+         
+
+        </div>
+           <ul class="nav__links" id="nav-links">
+  <li><a href="https://yk-engineering.vercel.app/">Home</a></li>
+  <li><a href="about.html">About</a></li>
+
+  <li class="dropdown">
+    <a href="services.html">Services</a>
+    <ul class="dropdown-menu">
+      <li><a href="fabrication-services-in-chennai.html">Fabrication Services</a></li>
+      <li><a href="structural-steel-erection-chennai.html">Erection Services</a></li>
+      <li><a href="#service3">Shed Roofing Installation</a></li>
+    </ul>
+  </li>
+
+  <li><a href="contact.html">Clients</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+        <div class="nav__btns">
+          <button class="btn"><a  href="mailto:ykfabricationworks@gmail.com">Let's Chat</a> </button>
+        </div>
+      </nav>
+      <section class="section__container about__section" >
+      <div class="contact-title">
+  <h2> Steel Erection Services in Chennai</h2>
+  <p>Structural steel | Industrial Fabrication | Heavy Fabrication | Commercial & Residential Erection</p>
+</div>
+        </section>
+    </header>
+<section class="industry-section">
+    
+
+  <!-- LEFT IMAGE -->
+  <div class="industry-image" >
+    <img src="assets/structure.png" alt="">
+     
+  </div>
+   
+  <!-- RIGHT CONTENT -->
+  <div class="industry-content">
+    <h3>Structural Steel & Industrial Steel Erection Contractors in Chennai</h3>
+
+    <p>
+    We provide professional erection and fabrication services in Chennai, specializing in structural steel fabrication and erection for beams, columns, girders, industrial sheds, warehouses, PEB (Pre-Engineered Buildings), and multi-storey steel structures. 
+    Our services also include industrial fabrication and erection, covering pipe racks, process structures, conveyor systems, platforms, walkways, staircases, and equipment support frames. 
+    For heavy fabrication and erection, we handle storage tanks, silos, boilers, pressure vessels, chimneys, stacks, and heavy machinery structures. 
+    Additionally, we execute commercial and residential steel works, such as mezzanine floors, canopies, roofing systems, staircases, handrails, ladders, balconies, and façade structures. Our team is skilled in specialized fabrication and erection, including trusses, space frame structures, gantry girders, crane structures, transmission and utility structures, and custom-built steel components. We also offer complete erection and site services in Chennai, including on-site steel erection, high-tensile bolting, MIG/TIG/ARC welding, alignment, leveling, and grouting, along with repair, modification, and maintenance services, such as structural strengthening, dismantling and re-erection, alterations, retrofitting, and annual maintenance contracts. </p>
+
+   <ul class="features">
+  <li>✔ Safe and efficient steel erection</li>
+  <li>✔ Industrial and commercial projects</li>
+  <li>✔ Experienced and trained team</li>
+  <li>✔ Timely project completion</li>
+</ul>
+
+  </div>
+
+</section>
+
+ <section id="services" class="services">
+  <div class="footer" style="background: linear-gradient(
+  rgba(80,35,10,0.6),
+  rgba(0,0,0,0.6));">
+    <div class="container">
+      <div id="slideImg" style="margin-top:0%; overflow: hidden; position: relative;">
+        <div class="slideMain" style="width: 200%;">
+          <ul class="slide1" style="display: flex; width: 100%; animation: slideHorizontal 20s linear infinite;">
+            <!-- First set of images -->
+            <li style="flex: 0 0 auto;"><img src="assets/const 3.jpeg" alt="Project 1" width="210" height="154"></li>
+            <li style="flex: 0 0 auto;"><img src="assets/const1.jpeg" alt="Project 2" width="210" height="154"></li>
+            <li style="flex: 0 0 auto;"><img src="assets/const2.jpeg" alt="Project 3" width="210" height="154"></li>
+            <li style="flex: 0 0 auto;"><img src="assets/fitting.jpeg" alt="Project 4" width="210" height="154"></li>
+            <li style="flex: 0 0 auto;"><img src="assets/fact3.jpeg" alt="Project 5" width="210" height="154"></li>
+            <li style="flex: 0 0 auto;"><img src="assets/fac1.jpeg" alt="Project 6" width="210" height="154"></li>
+            
+            <!-- Duplicate set for seamless loop -->
+            <li style="flex: 0 0 auto;"><img src="assets/factory.jpeg" alt="Project 1" width="210" height="154"></li>
+            <li style="flex: 0 0 auto;"><img src="" alt="Project 2" width="210" height="154"></li>
+            <li style="flex: 0 0 auto;"><img src="" alt="Project 3" width="210" height="154"></li>
+            <li style="flex: 0 0 auto;"><img src="" alt="Project 4" width="210" height="154"></li>
+            <li style="flex: 0 0 auto;"><img src="" alt="Project 5" width="210" height="154"></li>
+            <li style="flex: 0 0 auto;"><img src="" alt="Project 6" width="210" height="154"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>YK Engineering works</h3>
+            <p>
+              No.27, Kamaraj Nagar,<br> Tiruvottiyur,<br> Chennai-600019.<br>
+              <strong>Phone:</strong> <a href="tel:+919080350798">9080350798</a><br>
+              <strong>Email:</strong> <a href="mailto:ykfabricationworks@gmail.com">ykfabricationworks@gmail.com</a><br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right" style="color:#FF9900"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right" style="color:#FF9900"></i> <a href="#">About</a></li>
+              <li><i class="bx bx-chevron-right" style="color:#FF9900"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right" style="color:#FF9900"></i> <a href="#">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right" style="color:#FF9900"></i> <a href="#">Fabrication Services</a></li>
+              <li><i class="bx bx-chevron-right" style="color:#FF9900"></i> <a href="#">Erection Services</a></li>
+              <li><i class="bx bx-chevron-right" style="color:#FF9900"></i> <a href="#">Shed Roofing Installation</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-5 col-md-6 footer-newsletter" >
+            <h4>Location Map</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.123456789012!2d80.2791852!3d13.1640842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMTPCsDA5JzUwLjciTiA4MMKwMTYnNDUuMSJF!5e0!3m2!1sen!2sin!4v1612345678901!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="credits">
+          &copy; Copyright 2024 YK ENGINEERING INDUSTRY. All rights reserved.
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="mailto:ykfabricationworks@gmail.com"><i class="ri-mail-fill"></i></a>
+            <a href="tel:91+9080350798 "><i class="ri-phone-line"></i></a>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+<script>new Swiper(".productSwiper", {
+  loop: true,
+  spaceBetween: 40,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+</script>
+</body>
+</html>
+
