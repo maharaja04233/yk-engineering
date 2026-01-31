@@ -4,7 +4,9 @@ const menuBtnIcon = menuBtn.querySelector("i");
 
 if (menuBtn) {
   menuBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
+    menu.classList.toggle("active");
+  });
+}
 
   const isOpen = navLinks.classList.contains("open");
   menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
@@ -199,7 +201,9 @@ function activeMenu(){
     menuLi[len].classList.add("active");
 }
 activeMenu();
-window.addEventListener("scroll",activeMenu);
+window.addEventListener("scroll", () => {
+  header.classList.toggle("sticky", window.scrollY > 50);
+});
 
 // scroll reveal
 
@@ -215,4 +219,5 @@ ScrollReveal().reveal('.hero-info,.main-text,.proposal,.heading', { origin: "top
 ScrollReveal().reveal('.about-img,.fillter-buttons,.contact-info', { origin: "left" });
 ScrollReveal().reveal('.about-content,.skills', { origin: "right" });
 ScrollReveal().reveal('.allServices,.portfolio-gallery,.blog-box,footer,.img-hero', { origin: "bottom" });
+
 
