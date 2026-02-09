@@ -298,9 +298,9 @@ body{
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-    <link rel="preload" as="image" href="assets/services.webp">
+  
 
   <link rel="stylesheet" href="styles.css" />
    
@@ -564,26 +564,22 @@ Choose YK Engineering Works for custom shed fabrication and industrial roofing s
  
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
-<script>new Swiper(".productSwiper", {
-  loop: true,
-  spaceBetween: 40,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  new Swiper(".productSwiper", {
+    loop: true,
+    spaceBetween: 40,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    }
+  });
 });
-
 </script>
+
 </body>
 </html>
+
 
 
 
