@@ -528,8 +528,69 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+	  
+		  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const skillsSection = document.querySelector(".skills");
+  const counters = document.querySelectorAll(".counter span");
+  const circles = document.querySelectorAll("svg circle");
+
+  let animated = false;
+
+  function animateSkills() {
+    if (animated) return;
+    animated = true;
+
+    counters.forEach((counter, index) => {
+      const target = +counter.getAttribute("data-target");
+      let current = 0;
+      const speed = 20;
+
+      const updateCounter = () => {
+        if (current < target) {
+          current++;
+          counter.innerText = current;
+          setCircleProgress(circles[index], current);
+          setTimeout(updateCounter, speed);
+        } else {
+          counter.innerText = target;
+          setCircleProgress(circles[index], target);
+        }
+      };
+
+      updateCounter();
+    });
+  }
+
+  function setCircleProgress(circle, value) {
+    const radius = circle.r.baseVal.value;
+    const circumference = 2 * Math.PI * radius;
+
+    circle.style.strokeDasharray = `${circumference}`;
+    const offset = circumference - (value / 100) * circumference;
+    circle.style.strokeDashoffset = offset;
+  }
+
+  // Intersection Observer (runs when visible)
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateSkills();
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  observer.observe(skillsSection);
+});
+</script>
+
+	 
   </body>
 </html>
+
 
 
 
