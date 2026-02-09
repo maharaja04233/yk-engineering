@@ -318,11 +318,28 @@ body{
 }
 
 /* RESPONSIVE */
-@media(max-width:768px){
+@media (max-width: 768px) {
   .product {
-    flex-direction:column;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .product-content h2 {
+    font-size: 22px;
+  }
+
+  .product-content p {
+    font-size: 15px;
   }
 }
+
+/* Image stability (CLS fix too) */
+.product-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}	
 
 </style>
   <link
@@ -601,6 +618,7 @@ body{
 </script>
 </body>
 </html>
+
 
 
 
