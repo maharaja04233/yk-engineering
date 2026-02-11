@@ -626,30 +626,85 @@ body{
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 <script>
-  const swiper = new Swiper(".productSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 40,
-    loop: true,
-
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-</script>
+        // Initialize Swiper with mobile optimizations
+        document.addEventListener('DOMContentLoaded', function() {
+            const swiper = new Swiper(".productSwiper", {
+                // Core options
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                speed: 800,
+                
+                // Autoplay
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+                
+                // Pagination
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    dynamicBullets: false,
+                },
+                
+                // Responsive breakpoints
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 15,
+                    },
+                    480: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                    },
+                    992: {
+                        slidesPerView: 1,
+                        spaceBetween: 40,
+                    }
+                },
+                
+                // Touch settings for mobile
+                touchRatio: 1,
+                touchAngle: 45,
+                grabCursor: true,
+                slideToClickedSlide: false,
+                
+                // Performance
+                preloadImages: true,
+                updateOnImagesReady: true,
+                
+                // Accessibility
+                a11y: {
+                    enabled: true,
+                    prevSlideMessage: 'Previous slide',
+                    nextSlideMessage: 'Next slide',
+                },
+            });
+            
+            // Update copyright year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Mobile menu toggle
+            const menuBtn = document.getElementById('menu-btn');
+            const navLinks = document.getElementById('nav-links');
+            
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        });
+    </script>
 
 </body>
 </html>
+
 
 
 
